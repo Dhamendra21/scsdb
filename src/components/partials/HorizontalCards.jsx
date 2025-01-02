@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import noimage from "/noimage.png"
+// import noimage from "../../../public/noimage.png"
 
 
 const HorizontalCards = ({ data }) => {
@@ -15,7 +15,9 @@ const HorizontalCards = ({ data }) => {
                 className="w-full object-cover h-[50%] "
                 src={d.backdrop_path || d.poster_path ? `https://image.tmdb.org/t/p/original/${
                   d.backdrop_path || d.poster_path
-                }`: noimage }
+                }`: null
+                //  noimage
+                 }
                 alt=""
               />
               <div className="p-3 h-[45%] overflow-y-auto">
