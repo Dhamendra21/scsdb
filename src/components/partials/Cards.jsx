@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import noimage from "../../../public/noimage.png"
+// import noimage from "../../../public/noimage.png"
 const Cards = ({ data, title }) => {
   console.log(title);
 
@@ -17,8 +17,8 @@ const Cards = ({ data, title }) => {
               className=" h-[40vh] max-sm:h-[20vh] object-cover"
               src={ c.poster_path || c.backdrop_path || c.profile_path ? `https://image.tmdb.org/t/p/w500/${
                 c.poster_path || c.backdrop_path || c.profile_path
-              }` : 
-               noimage
+              }` : null
+              //  noimage
             }
               alt={c.title}
             />
